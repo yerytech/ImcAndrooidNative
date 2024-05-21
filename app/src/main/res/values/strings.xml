@@ -2,4 +2,7 @@
     <string name="app_name">IMC</string>
     <string name="Man">Man</string>
     <string name="Woman">Woman</string>
+    <string name="Height">Height</string>
+    <string name="HeightNumber">120 cm</string>
+    <string name="Range">range</string>
 </resources>
