@@ -91,9 +91,11 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/viewHeight"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
+
         app:cardBackgroundColor="@color/backgroundItem"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,8 +104,9 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -113,18 +116,25 @@
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/tvHeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                 android:text="@string/HeightNumber"
+                android:text="@string/HeightNumber"
                 android:textColor="@color/white"
-                android:textSize="40sp"
-                />
+                android:textSize="40sp" />
+
             <com.google.android.material.slider.RangeSlider
-                android:layout_width="wrap_content"
+                android:id="@+id/rsHeight"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                 android:contentDescription="@string/Range"
-                />
+                android:contentDescription="@string/Range"
+                android:stepSize="1"
+                android:valueFrom="120"
+                android:valueTo="200"
+                app:thumbColor="@color/principalBtnColors"
+                app:trackColor="@color/white" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -132,5 +142,44 @@
 
     </androidx.cardview.widget.CardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/viewPeso"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/backgroundItem"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/viewAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHeight" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:textSize="30sp"
+               android:text="@"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/viewAge"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/backgroundItem"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewPeso"
+        app:layout_constraintTop_toBottomOf="@+id/viewHeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
