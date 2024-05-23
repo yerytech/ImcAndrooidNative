@@ -5,4 +5,13 @@
     <string name="Height">Height</string>
     <string name="HeightNumber">120 cm</string>
     <string name="Range">range</string>
+    <string name="Weight">Weight</string>
+    <string name="Age">Age</string>
+    <string name="Weight_number">150</string>
+    <string name="Age_number">35</string>
+    <string name="Calculate">Calculate</string>
+    <string name="bntWeight">bntWeight</string>
+    <string name="bntAge">btnAge</string>
+    <string name="RangeSlider">RangeSlider</string>
+
 </resources>
