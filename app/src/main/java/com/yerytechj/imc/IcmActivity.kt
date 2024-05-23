@@ -17,8 +17,8 @@ import com.google.android.material.slider.RangeSlider
 
 
 class IcmActivity : AppCompatActivity() {
-    private var weight: Int = 0
-    private var age: Int = 0
+    private var weight: Int = 60
+    private var age: Int = 25
     private var height: Int = 120
     private var isSelected: Boolean = true
     private lateinit var viewWoman: CardView

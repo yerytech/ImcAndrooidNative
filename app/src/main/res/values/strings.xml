@@ -7,7 +7,7 @@
     <string name="Range">range</string>
     <string name="Weight">Weight</string>
     <string name="Age">Age</string>
-    <string name="Weight_number">0</string>
+    <string name="Weight_number">60</string>
     <string name="Age_number">25</string>
     <string name="Recalculate">Recalculate</string>
     <string name="Calculate">calculate</string>

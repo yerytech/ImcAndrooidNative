@@ -12,12 +12,12 @@ class ResultImcActivity : AppCompatActivity() {
     private lateinit var tvResult: TextView
     private lateinit var tvIMC: TextView
     private lateinit var tvDescription: TextView
-    private lateinit var btnCalculate:Button
+    private lateinit var btnRecalculate:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        actionBar?.hide()
+        supportActionBar?.hide()
         setContentView(R.layout.activity_result_imc)
         val result: Double = intent.extras?.getDouble(IMC_KEY) ?: -1.0
         initComponets()
@@ -69,13 +69,15 @@ class ResultImcActivity : AppCompatActivity() {
         tvResult = findViewById(R.id.tvResult)
         tvIMC = findViewById(R.id.tvImc)
         tvDescription = findViewById(R.id.tvDescription)
-        btnCalculate=findViewById(R.id.btnCalculate)
+        btnRecalculate=findViewById(R.id.btnRecalculate)
     }
 
     private fun navigateToIMCPage(){
-        btnCalculate.setOnClickListener {
+        btnRecalculate.setOnClickListener {
             val intent= Intent(this,IcmActivity::class.java)
             startActivity(intent)
+            finish()
+
 
         }
 
