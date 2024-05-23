@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    tools:context=".ResultImcActivity">
+
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_height="wrap_content"
+     android:text="@string/Imc_Result"
+    android:textColor="@color/white"
+     android:textSize="50sp"
+    android:textStyle="bold"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="30dp"
+        app:cardCornerRadius="16dp"
+        android:backgroundTint="@color/backgroundCard"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecalculate"
+        android:layout_height="0dp" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:text="@string/tv_result"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginVertical="30dp"
+                android:id="@+id/tvImc"
+                android:text="@string/tv_IMC"
+                android:textSize="80sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginVertical="30dp"
+                android:id="@+id/tvDescription"
+                 android:text="@string/tv_Description"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+
+        android:id="@+id/btnRecalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/principalBtnColors"
+        android:paddingBottom="16dp"
+        android:shadowColor="@color/backgroundApp"
+        android:text="@string/Recalculate"
+        android:textSize="30sp"
+        android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

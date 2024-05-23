@@ -11,6 +11,7 @@
 
     <color name="backgroundApp">#303030</color>
     <color name="backgroundItem">#393939</color>
+    <color name="backgroundCard">#1B1C2C</color>
     <color name="backgroundItemSelected">#1F1F1F</color>
     <color name="btnColors">#ADADAD</color>
     <color name="principalBtnColors">#F44336</color>

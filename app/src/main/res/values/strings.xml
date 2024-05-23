@@ -7,11 +7,24 @@
     <string name="Range">range</string>
     <string name="Weight">Weight</string>
     <string name="Age">Age</string>
-    <string name="Weight_number">150</string>
-    <string name="Age_number">35</string>
-    <string name="Calculate">Calculate</string>
+    <string name="Weight_number">0</string>
+    <string name="Age_number">25</string>
+    <string name="Recalculate">Recalculate</string>
+    <string name="Calculate">calculate</string>
     <string name="bntWeight">bntWeight</string>
     <string name="bntAge">btnAge</string>
     <string name="RangeSlider">RangeSlider</string>
+    <string name="Imc_Result"> IMC Result</string>
+    <string name="tv_result"> Normal</string>
+    <string name="tv_IMC"> 23.3</string>
+    <string name="tv_Description"> This is the results </string>
+
+    <string name="obesidad">Obesidad</string>
+    <string name="normal">Normal</string>
+    <string name="sobrepeso">Sobre Peso</string>
+    <string name="bajopeso">Bajo Peso</string>
+    <string name="error">Error</string>
+
+
 
 </resources>
