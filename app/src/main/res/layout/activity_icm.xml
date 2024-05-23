@@ -56,8 +56,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/viewWoman"
         android:layout_width="0dp"
-        android:layout_marginTop="25dp"
         android:layout_height="150dp"
+        android:layout_marginTop="25dp"
         android:contentDescription="@string/Man"
         app:cardBackgroundColor="@color/backgroundItemSelected"
         app:cardCornerRadius="16dp"
@@ -129,7 +129,7 @@
                 android:textSize="40sp" />
 
             <com.google.android.material.slider.RangeSlider
-                android:id="@+id/rsHeight"
+                android:id="@+id/rsHeightSlider"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/RangeSlider"
@@ -173,6 +173,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvWeightNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Weight_number"
@@ -188,19 +189,23 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/bntMinusWei"
+                    android:id="@+id/btnMinusWei"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:contentDescription="@string/bntWeight"
-                    android:src="@drawable/minus" />
+                    android:src="@drawable/minus"
+                    app:backgroundTint="@color/principalBtnColors"
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/bntPlusWei"
+                    android:id="@+id/btnPlusWei"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/bntWeight"
-                    android:src="@drawable/plus" />
+                    android:src="@drawable/plus"
+                    app:backgroundTint="@color/principalBtnColors"
+                    app:tint="@color/white" />
 
 
             </LinearLayout>
@@ -238,7 +243,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/ageNumber"
+                android:id="@+id/tvAgeNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Age_number"
@@ -254,19 +259,23 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/bntPlusAge"
+                    android:id="@+id/btnMinusAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:contentDescription="@string/bntWeight"
-                    android:src="@drawable/minus" />
+                    android:src="@drawable/minus"
+                    app:backgroundTint="@color/principalBtnColors"
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/bntMinusAge"
+                    android:id="@+id/btnPlusAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/bntWeight"
-                    android:src="@drawable/plus" />
+                    android:src="@drawable/plus"
+                    app:backgroundTint="@color/principalBtnColors"
+                    app:tint="@color/white" />
 
             </LinearLayout>
 
@@ -281,11 +290,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="@color/principalBtnColors"
         android:paddingBottom="16dp"
+        android:shadowColor="@color/backgroundApp"
         android:text="@string/Calculate"
         android:textSize="30sp"
-        android:shadowColor="@color/backgroundApp"
-        android:backgroundTint="@color/principalBtnColors"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
